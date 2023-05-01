@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,700;1,500&display=swap');
+
+
+:root{
+    --main-color:#1F4590 ;
+    --second-color:#FFA451 ;
+    --body-color:#D0FCFF ;
+
+    --main-font:'Open Sans', sans-serif;
+    --heading-font:'Raleway', sans-serif;
+
+
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: var(--main-font);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+section{
+    margin-top: 200px;
+}
+.container{
+    max-width: 1000px;
+}
+.navbar{
+    background-color:#FFA451;
+}
+.navbar .nav-wrapper{
+    background-color: violet;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.nav-wrapper .logo{
+    font-size:4rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--main-color);
+
+}
+.nav-wrapper .logo span{
+    font-size: 3rem;
+    color: var(--second-color);
+}
+.nav-wrapper .menu-wrapper{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    background-color: whitesmoke;
+}
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: yellow;
+}
+.nav-wrapper .menu-wrapper .menu-link{
+    font-size: 1rem;
+    color:var(--main-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+
+}
+.nav-wrapper .menu-wrapper .menu-link.active{
+    font-weight: 700;
+    color: var(--second-color);
+}
+.menu-wrapper .btn-member{
+    font-family: var(--heading-font);
+    color: white;
+    font-weight: 600;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color:var(--second-color) ;
+
+}
+
+@media screen and (max-width:951px){
+    .navbar .nav-wrapper{
+        padding: 0 30px;
+    }
+    .nav-wrapper .menu-wrapper .menu{
+       
+        gap: 1000px;   
+    } 
+    .nav-wrapper .menu-wrapper .menu-link{
+        font-size: 1rem;
+    }
+    .menu-wrapper .btn-member{
+        padding: 10px 25px;
+      }
+
+
+    
+}
+@media screen and (max-width: 768px) {
+    
+    
+}
