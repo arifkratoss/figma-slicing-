@@ -36,12 +36,16 @@ section{
     background-color:#FFA451;
 }
 .navbar .nav-wrapper{
+    position: relative;
     background-color: violet;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 150px;
+}
+.nav-wrapper .menu-toggle{
+    display: none;
 }
 .nav-wrapper .logo{
     font-size:4rem;
@@ -55,16 +59,15 @@ section{
     color: var(--second-color);
 }
 .nav-wrapper .menu-wrapper{
-    position: relative;
     display: flex;
     gap: 50px;
-    background-color: whitesmoke;
+    background-color: var(--main-color);
 }
 .nav-wrapper .menu-wrapper .menu{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: yellow;
+    
 }
 .nav-wrapper .menu-wrapper .menu-link{
     font-size: 1rem;
@@ -86,26 +89,38 @@ section{
     background-color:var(--second-color) ;
 
 }
-
-@media screen and (max-width:951px){
-    .navbar .nav-wrapper{
-        padding: 0 30px;
-    }
-    .nav-wrapper .menu-wrapper .menu{
-       
-        gap: 1000px;   
-    } 
-    .nav-wrapper .menu-wrapper .menu-link{
-        font-size: 1rem;
-    }
-    .menu-wrapper .btn-member{
-        padding: 10px 25px;
-      }
-
+@media screen and (min-width: 768px) {
+.nav-wrapper .menu-wrapper{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+.nav-wrapper .menu-wrapper .menu{
+    display: block;
+   
 
     
 }
-@media screen and (max-width: 766px) {
+ .menu-wrapper .menu .menu-item{
+    margin: 5%  ;
+}
+.menu .menu-item .menu-link{
+    color: whitesmoke;
+}
+.nav-wrapper .menu-toggle{
+    display: initial;
+    font-size: 3rem;
+    color: var(--main-color);
+}
 
-    
+
+
+
+
 }
