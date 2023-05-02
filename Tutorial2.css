@@ -71,7 +71,7 @@ section{
 }
 .nav-wrapper .menu-wrapper .menu-link{
     font-size: 1rem;
-    color:var(--main-color);
+    color:salmon;
     font-family: var(--heading-font);
     font-weight: 500;
 
@@ -87,40 +87,5 @@ section{
     padding: 15px 25px;
     border-radius: 50px;
     background-color:var(--second-color) ;
-
-}
-@media screen and (min-width: 768px) {
-.nav-wrapper .menu-wrapper{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    display: block;
-    text-align: center;
-    padding-bottom: 3rem;
-    border-radius: 10px;
-}
-.nav-wrapper .menu-wrapper .menu{
-    display: block;
-   
-
-    
-}
- .menu-wrapper .menu .menu-item{
-    margin: 5%  ;
-}
-.menu .menu-item .menu-link{
-    color: whitesmoke;
-}
-.nav-wrapper .menu-toggle{
-    display: initial;
-    font-size: 3rem;
-    color: var(--main-color);
-}
-
-
-
-
 
 }
