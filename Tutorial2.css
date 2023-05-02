@@ -86,6 +86,24 @@ section{
     font-weight: 600;
     padding: 15px 25px;
     border-radius: 50px;
-    background-color:var(--second-color) ;
+    background-color:rgb(158, 34, 34) ;
 
+}
+@media  screen and (max-width:991px) {
+   .nav-wrapper .menu-wrapper .menu{
+    gap: 30px;
+   }
+   .menu-wrapper .menu .menu-link{
+    font-size: 15px;
+   }
+    .menu-wrapper .btn-member{
+        padding:20px 15px ;
+        background-color: var(--second-color);
+        
+    }
+    .navbar .nav-wrapper{
+        padding: 0px 20px;
+    }
+    
+    
 }
