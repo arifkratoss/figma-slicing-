@@ -32,12 +32,12 @@ section{
     max-width: 1500px;
 }
 .navbar{
-    background-color:var(--second-color);
+    background-color:var(--body-color);
 }
 .navbar .nav-wrapper{
     position: relative;
     width: 850px;
-    background-color: violet;
+    background-color: var(--body-color);
     margin: auto;
     display: flex;
     justify-content:space-between;
@@ -59,8 +59,7 @@ section{
 }
 .nav-wrapper .menu-wrapper{
     display: flex;
-    gap: 40px;
-    background-color: var(--main-color);
+    gap: 50px;
    
 }
 .nav-wrapper .menu-wrapper .menu{
@@ -87,6 +86,94 @@ section{
     padding: 15px 20px;
     border-radius: 35px;
 }
+/* home start */
+.home{
+    margin-top: 50px;
+}
+.home .home-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home-wrapper .heading{
+    font-size: 30px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--main-color);
+}
+.home-wrapper .heading span{
+    font-size: 25px;
+    color: var(--second-color);
+
+}
+.home-wrapper .subheading{
+    font-size: 20px;
+    color: black;
+    max-width: 700px;
+    margin: 20px 0;
+}
+.home-wrapper .box-wrapper{
+    display: flex;
+    gap: 70px;
+}
+.home-wrapper .box-wrapper .box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.box-wrapper .box i{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.box-wrapper .box p{
+    font-size: 15px;
+    font-family: var(--heading-font);
+    font-weight: 700px;
+    color: var(--main-color);
+    text-align: center;
+    width: 100px;
+}
+.content-left .from-panel{
+    position: relative;
+    width: 640px;
+    height: 110px;
+   
+    border-radius: 70px;
+   
+   
+}
+.from-panel .title-from{
+    position: absolute;
+    top: 40px;
+    left: -180px;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    color: white;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0px;
+}
+
+.from-panel img{
+  
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: -420px;
+   
+    
+}
+.home-wrapper .content-left{
+    flex: 0 0 50%;
+}
+.home-wrapper .content-right{
+ flex: 0 0 500%;
+}
+/* home end */
 @media screen and (max-width:991px) {
     .nav-wrapper .menu-wrapper{
         width: 700px;
@@ -126,9 +213,14 @@ section{
        border-radius: 10px;
        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-    .nav-wrapper .menu-wrapper .aktif{
+    .nav-wrapper .menu-wrapper.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+    .menu-toggle.bx-x{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+  
     .nav-wrapper .menu-wrapper .menu{
         display: block;
     }
