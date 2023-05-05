@@ -202,6 +202,12 @@ section{
 .from-panel .btn-search i{
     font-size: 30px;
 }
+.popular{
+margin-top: 160px;
+font-size: 15px;
+text-align: left;
+color: rgb(75, 72, 72);
+}
 
     
 
@@ -227,6 +233,15 @@ section{
 .home-wrapper .content-right{
  flex: 0 0 500%;
 }
+  .content-right .img-wrapper {
+  max-width: 800px;
+
+  }
+  .content-right .img-wrapper img{
+    width: 400px;
+   margin-left: 800px;
+   margin-top: -600px;
+  }
 /* home end */
 @media screen and (max-width:991px) {
     .nav-wrapper .menu-wrapper{
