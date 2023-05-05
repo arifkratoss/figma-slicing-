@@ -243,6 +243,79 @@ color: rgb(75, 72, 72);
    margin-top: -600px;
   }
 /* home end */
+/* service start */
+   .service .service-wrapper{
+    margin: auto;
+   }
+   .service-wrapper .row1{
+    text-align: center;
+   }
+   .service-wrapper .label-service{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--second-color);
+   }
+   .service-wrapper .heading-service{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: rgb(61, 57, 57);
+    margin: 10px 0px;
+   }
+   .service-wrapper .subheading-service{
+    font-size: 20px;
+    
+   }
+   .service-wrapper .row2{
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    gap: 30px;
+   text-align: center;
+    justify-content: center;
+    margin-left: 60px;
+    box-sizing: border-box;
+   flex-wrap: wrap;
+   margin-top: 70px;
+  
+   border-radius: 40px 40px 0 0;
+   }
+   .row2 .box-service{
+    position: relative;
+    width: 200px;
+    padding: 30px;
+   }
+   .box-service i{
+    font-size: 35px;
+   }
+   .box-service h3{
+    font-size: 20px;
+    margin-top: 10px;
+   }
+   .box-service .btn-learn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:120%;
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: 1s ease-in-out;
+   }
+   .box-service:hover .btn-learn{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: 1s ease-in-out;
+   }
+   .btn-learn a{
+    color: white;
+   }
+/* service end */
 @media screen and (max-width:991px) {
     .nav-wrapper .menu-wrapper{
         width: 700px;
