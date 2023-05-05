@@ -343,6 +343,86 @@ color: rgb(75, 72, 72);
     color: var(--main-color);
     cursor: pointer;
 }
+.produk-wrapper .row2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.produk-wrapper .card-produk{
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    overflow-y: hidden;
+}
+.row2 .detail-produk{
+    background-color: rgba(255, 255, 255, 0.451);
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid white;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.428);
+    transition: .5s ease-in-out;
+    
+}
+.card-produk:hover .detail-produk{
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+.detail-produk .kategori{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kategori .label-kategori{
+    padding: 5px 20px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 5px;
+   
+}
+.kategori .price{
+    background-color: var(--main-color);
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+    
+}
+.detail-produk .title-card h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: rgb(70, 66, 66);
+}
+.detail-produk .review{
+    display: flex;
+    gap: 10px;
+}
+.review i{
+    color: rgba(255, 255, 0, 0.873);
+}
+.detail-produk .body-card{
+    margin: 20px 0;
+}
+.detail-produk .btn-produk{
+    background-color: var(--second-color);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50px;
+}
+.btn-produk a{
+    color: white;
+}
 /* produk end */
 @media screen and (max-width:991px) {
     .nav-wrapper .menu-wrapper{
