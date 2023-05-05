@@ -185,9 +185,27 @@ section{
     padding: 4px 8px;
 }
 .from-panel .btn-search{
+    position: relative;
     background-color: var(--second-color);
-    width: 20px;
+   width: 30px;
+   margin-top: -45px;
+   text-align: center;
+   padding: 15px 25px;
+   border-radius: 35px;
+   
+   display: flex;
+   justify-content: center;
+   color: white;
+   margin-left:15px ;
+
 }
+.from-panel .btn-search i{
+    font-size: 30px;
+}
+
+    
+
+
 
 .from-panel img{
   
@@ -199,8 +217,12 @@ section{
    
     
 }
+ .sugestion{
+    margin-top: 300px;
+    margin-left: -1000px;
+}
 .home-wrapper .content-left{
-    flex: 0 0 50%;
+    flex: 0 0 40%;
 }
 .home-wrapper .content-right{
  flex: 0 0 500%;
