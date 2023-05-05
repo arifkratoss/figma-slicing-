@@ -316,6 +316,34 @@ color: rgb(75, 72, 72);
     color: white;
    }
 /* service end */
+/* produk start */
+.produk .produk-wrapper{
+    margin: auto;
+}
+.produk-wrapper .row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1 .Label-produk{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--second-color);
+}
+.row1 .heading-produk{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    color: rgb(65, 56, 56);
+    margin-top: 10px;
+}
+.row1 .toggle-slider i{
+    font-size: 35px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* produk end */
 @media screen and (max-width:991px) {
     .nav-wrapper .menu-wrapper{
         width: 700px;
