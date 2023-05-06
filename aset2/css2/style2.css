@@ -314,15 +314,15 @@ section{
     font-size: 40px;
     font-weight: 700;
     font-family: var(--heading-font);
-    color: rgba(56, 53, 53, 0.73);
+    color: rgba(45, 41, 41, 0.891);
     margin-top: 10px;
 }
-.row1 .toggle-slider{
-    font-size: 40px;
-    color: var(--main-color);
-    cursor: pointer;
+.row1 .toggle-slider i{
+      font-size: 40px;
+      color: var(--main-color);
+      cursor: pointer;
 }
-.produk .row2{
+.produk-wrapper .row2{
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -333,7 +333,7 @@ section{
     overflow-y: hidden;
 }
 .row2 .detail-produk{
-    background-color: rgba(246, 243, 243, 0.533);
+    background-color: rgba(132, 128, 128, 0.23);
     position: absolute;
     bottom: -50%;
     left: 50%;
@@ -342,8 +342,8 @@ section{
     padding: 30px;
     border-radius: 20px;
     border: 3px solid white;
-    backdrop-filter:blur(3px);
-    box-shadow: 0px 2px 10px rgba(24, 23, 23, 0.519);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 10px rgba(235, 230, 230, 0.309);
     transition: .5s ease-in-out;
 }
 .card-produk:hover .detail-produk{
@@ -372,20 +372,20 @@ section{
     align-items: center;
 }
 .detail-produk .title-card h1{
-    font-size: 30px;
-    font-size: 600;
-    font-family: var(--heading-font);
-    color: rgba(69, 66, 66, 0.776);
-} 
+     font-size: 30px;
+     font-weight: 600;
+     font-family: var(--heading-font);
+     color: rgb(51, 49, 49);
+}
 .detail-produk .review{
     display: flex;
-    gap:10%;
+    gap: 10px;
 }
 .review i{
-    color: rgb(178, 178, 16);
+    color: rgb(188, 188, 28);
 }
 .detail-produk .body-card{
-    margin: 25px o;
+    margin: 25px 0;
 }
 .detail-produk .btn-produk{
     background-color: var(--second-color);
@@ -398,6 +398,99 @@ section{
 .btn-produk a{
     color: white;
 }
-
-
 /* produk end */
+/* bannner 1 start */
+.banner1{
+    color: white;
+    margin: 200px  auto;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    border-radius: 10px;
+}
+.banner1 .heading{
+    font-family: var(--heading-font);
+    font-size: 40px;
+}
+.banner1 .content{
+    text-align: center;
+}
+.banner1 h3{
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: rgb(211, 50, 211);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.banner1 p{
+    font-size: 20px;
+    font-family: var(--heading-font);
+}
+.banner1 .btn-book{
+    background-color: var(--second-color);
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+.banner1 .btn-book a{
+    color: white;
+}
+/* banner 1 end */
+/* statistk start */
+.statistik-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.statistik-wrapper .content-img{
+    width: 500px;
+}
+.statistik-wrapper .content-statis{
+    width: 700px;
+}
+.content-img img{
+    width: 100;
+}
+.content-statis .label-statis{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    color: var(--second-color);
+}
+.content-statis .heading-statis{
+    font-family: var(--heading-font);
+    font-size: 40px;
+    font-weight: 700;
+    width: 70%;
+    margin: 20px 0;
+}
+.content-statis .subheading-statis{
+    font-size: 20px;
+    width: 70%;
+}
+.content-statis .angka-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 30px;
+}
+.angka-wrapper .box-angka{
+    text-align: center;
+}
+.box-angka h1{
+    font-family: var(--heading-font);
+    font-weight: 800;
+    color: var(--second-color);
+    font-size: 45px;
+}
+/* statistk end */
+/* @media start */
+@media screen and (max-width: 450px) {
+    .banner1 .btn-book{
+        margin: 30px auto;
+    }
+}
+/* @media end */
