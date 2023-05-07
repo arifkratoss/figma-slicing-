@@ -487,6 +487,191 @@ section{
     font-size: 45px;
 }
 /* statistk end */
+/* Testi start */
+.testi-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testi-wrapper .col-heading, .col-slider-testi{
+    width: 700px;
+}
+.testi-wrapper .col-heading .label-testi{
+    font-size: 25px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--second-color);
+}
+.testi-wrapper .col-heading .heading-testi{
+    font-size: 36px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: rgb(49, 45, 45);
+    margin: 25px 0;
+}
+.col-slider-testi .card-testi{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgba(235, 230, 230, 0.309);
+    padding: 30px;
+    text-align: center;
+}
+.card-testi .text-testi{
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    
+}
+.testi .bxs-quote-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testi .bxs-quote-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card-testi .status{
+    margin-top: 5px;
+    color: var(--second-color);
+}
+/* Testi end */
+/* Banner2 start */
+.banner2-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-color);
+    padding: 5rem 10rem;
+    border-radius: 15px;
+}
+.content-banner2 .heading{
+font-size: 36px;
+font-family: var(--heading-font);
+font-weight: 700;
+}
+.content-banner2 .subheading{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    margin-top: 10px;
+}
+.content-banner2 .disc{
+    background-color: rgb(143, 98, 13);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+.btn-banner2 .btn-regis{
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+/* Banner2 end */
+/* footer start */
+.footer{
+    margin-top: 200px;
+}
+.footer-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.col-1-footer .logo-footer{
+    font-family: var(--heading-font);
+    font-size: 50px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.logo-footer span{
+    font-size: 25px;
+    color: var(--second-color);
+}
+.col-1-footer .subheading-footer{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 400px;
+}
+.sosmed-icon{
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-top: 20px 5px;
+}
+.col-1-footer .copy{
+    margin-top: 50px;
+}
+.col-2-footer h3, .col-3-footer h3{
+font-size: 30px;
+font-family: var(--heading-font);
+font-weight: 700;
+}
+.col-2-footer ul{
+    margin-top: 20px;
+}
+.col-2-footer ul li{
+    margin-top: 10px;
+}
+.col-2-footer li a, .col-3-footer li a{
+    font-size: 18px;
+    color: rgb(61, 56, 56);
+}
+.col-3-footer ul{
+    margin-top: 20px;
+}
+.col-3-footer ul li{
+    margin-top: 20px;
+}
+.col-4-footer h3, .col-5-footer h3{
+    font-size: 30px;
+    font-family: var(--heading-font);
+    font-weight: 700
+}
+.col-4-footer ul{
+    margin-top: 20px;
+}
+.col-4-footer ul li{
+    margin-top: 20px;
+}
+.col-4-footer li a{
+    font-size: 18px;
+    color: rgb(61, 56, 56);
+}
+.col-5-footer p{
+  margin-top: 30px;
+  font-size: 18px;
+}
+.from-input{
+    padding: 20px 30px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(49, 45, 45);
+}
+.from-input input{
+    border: none;
+}
+.from-input input:focus{
+    outline: none;
+}
+.from-input .btn-footer{
+    background-color: var(--second-color);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+/* footer end */
 /* @media start */
 @media screen and (max-width: 450px) {
     .banner1 .btn-book{
